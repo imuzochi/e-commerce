@@ -91,6 +91,14 @@ class Product {
         this.meta = meta;
         this.thumbnail = thumbnail;
         this.images = images;
+    };
+
+    displayDetails() {
+       console.log(`${this.title} is ${this.description} and costs ${this.price} with a discount of ${this.discountPercentage}%. It also has a rating of ${this.rating} and there are ${this.stock} left in stock.`);
+    };
+
+    getPriceWithDiscount() {
+        return (this.price * (1 - (this.discountPercentage / 100)));
     }
 
 }
