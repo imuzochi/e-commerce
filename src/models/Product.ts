@@ -102,3 +102,5 @@ class Product {
     }
 
 }
+
+export { Product }
